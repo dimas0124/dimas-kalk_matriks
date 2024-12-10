@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matriks</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dimas/KA 1 Kalkulator Matriks</h1>
+        
+        <div class="matrix-section">
+            <div>
+                <h2>Matriks A</h2>
+                <div class="matrix-input" id="matrixA">
+                    <!-- Input matriks A -->
+                    <input type="number" id="a11" class="matrix-input-field">
+                    <input type="number" id="a12" class="matrix-input-field">
+                    <input type="number" id="a21" class="matrix-input-field">
+                    <input type="number" id="a22" class="matrix-input-field">
+                </div>
+            </div>
+
+            <div>
+                <h2>Matriks B</h2>
+                <div class="matrix-input" id="matrixB">
+                    <!-- Input matriks B -->
+                    <input type="number" id="b11" class="matrix-input-field">
+                    <input type="number" id="b12" class="matrix-input-field">
+                    <input type="number" id="b21" class="matrix-input-field">
+                    <input type="number" id="b22" class="matrix-input-field">
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="addMatrices()">Tambah</button>
+            <button onclick="subtractMatrices()">Kurang</button>
+            <button onclick="multiplyMatrices()">Kali</button>
+        </div>
+
+        <h2>Hasil</h2>
+        <div id="result"></div>
+    </div>
+
+    <!-- Link ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
